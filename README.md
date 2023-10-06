@@ -1,2 +1,45 @@
 # Japan-Meteorological-Agency-Weather-Forecast
-An archive of weather forecasts published by the Japan Meteorological Agency
+
+This is an archive of past weather forecasts issued by the Japan Meteorological Agency.  
+The collection sources are the following URL formats and the following time periods.  
+The orginal json files are grouped by month into csv files.  
+
+- overview forecast  
+  - Source: https://www.jma.go.jp/bosai/forecast/data/overview_forecast/{region_code}.json  
+  - Period: from 2021-12-15 to 2021-09-30  
+  - Collection interval: 3 times a day (there may be omissions)   
+  - File name:  
+    - yyyyMM_{region_code}_ansi.csv  
+    - yyyyMM_{region_code}_utf8.csv  
+  - Region code: [  
+                '011000', '012000', '013000', '014100', '015000', '016000', '017000', '020000',   
+                '030000', '040000', '050000', '060000', '070000', '080000', '090000', '100000',  
+                '110000', '120000', '130000', '140000', '150000', '160000', '170000', '180000',  
+                '190000', '200000', '210000', '220000', '230000', '240000', '250000', '260000',  
+                '270000', '280000', '290000', '300000', '310000', '320000', '330000', '340000',  
+                '350000', '360000', '370000', '380000', '390000', '400000', '410000', '420000',  
+                '430000', '440000', '450000', '460100', '471000', '472000', '473000', '474000'  
+                ]  
+
+
+
+日本の気象庁が過去に発表した天気予報のアーカイブです。  
+jsonファイルを月単位にまとめcsvファイルにしています。  
+収集元は以下のURL形式、以下の期間です。  
+
+- 概要予報  
+  - ソース https://www.jma.go.jp/bosai/forecast/data/overview_forecast/{region_code}.json  
+  - 期間：2021-12-15から2021-09-30まで  
+  - 収集間隔 1日3回（漏れがある可能性あり）   
+  - ファイル名   
+    - yyyyMM_{地域コード}_ansi.csv  
+    - yyyyMM_{地域コード}_utf8.csv  
+  - 地域コード : [  
+                '011000', '012000', '013000', '014100', '015000', '016000', '017000', '020000',   
+                '030000', '040000', '050000', '060000', '070000', '080000', '090000', '100000',  
+                '110000', '120000', '130000', '140000', '150000', '160000', '170000', '180000',  
+                '190000', '200000', '210000', '220000', '230000', '240000', '250000', '260000',  
+                '270000', '280000', '290000', '300000', '310000', '320000', '330000', '340000',  
+                '350000', '360000', '370000', '380000', '390000', '400000', '410000', '420000',  
+                '430000', '440000', '450000', '460100', '471000', '472000', '473000', '474000'  
+                ]  
