@@ -2,9 +2,9 @@
 
 This is an archive of past weather forecasts issued by the Japan Meteorological Agency.  
 The collection sources are the following URL formats and the following time periods.  
-The orginal json files are grouped by month into csv files.  
 
-- overview forecast  
+- overview forecast
+  - The orginal json files are grouped by month into csv files.  
   - Source: https://www.jma.go.jp/bosai/forecast/data/overview_forecast/{region_code}.json  
   - Period: from 2021-12-15 to 2021-09-30  
   - Collection interval: 3 times a day (there may be omissions)   
@@ -24,10 +24,10 @@ The orginal json files are grouped by month into csv files.
 
 
 日本の気象庁が過去に発表した天気予報のアーカイブです。  
-jsonファイルを月単位にまとめcsvファイルにしています。  
 収集元は以下のURL形式、以下の期間です。  
 
 - 概要予報  
+  - jsonファイルを月単位にまとめcsvファイルにしています  
   - ソース https://www.jma.go.jp/bosai/forecast/data/overview_forecast/{region_code}.json  
   - 期間：2021-12-15から2021-09-30まで  
   - 収集間隔 1日3回（漏れがある可能性あり）   
