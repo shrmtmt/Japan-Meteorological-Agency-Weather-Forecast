@@ -59,9 +59,9 @@ There was another "overview_week" but it seems to have stopped being updated, so
    
 - 概要予報(overview forecast)  
   - jsonファイルを月単位にまとめcsvファイルにしています  
-  - ソース https://www.jma.go.jp/bosai/forecast/data/overview_forecast/{region_code}.json  
+  - ソース: https://www.jma.go.jp/bosai/forecast/data/overview_forecast/{region_code}.json  
   - 期間：2021-12-15から2021-09-30まで  
-  - 収集間隔 1日3回（漏れがある可能性あり）   
+  - 収集間隔 1日3回（漏れがある可能性あり、定時発表に加え訂正がなされることもあり）   
   - ファイル名:  
     - yyyyMM_{地域コード}_ansi.csv  
     - yyyyMM_{地域コード}_utf8.csv  
