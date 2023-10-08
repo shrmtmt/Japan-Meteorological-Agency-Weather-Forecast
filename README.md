@@ -1,3 +1,32 @@
+# 気象庁が過去に発表した天気予報のアーカイブ（日本）  
+各データ項目の読み取り方は、気象庁が公式に発表していないこともあり、私からは説明を控えます。
+気象庁のwebページの記載と照らし合わせて各自推測していただけますようお願いします。
+"forecast"と"overview forecast"の2種類のデータがあります。
+他に"overview_week"というのもあったのですが、更新が止まってしまったようです。
+収集元は以下のURL形式、以下の期間です。  
+
+- 予報(forecast)  
+  - jsonファイルを月単位にまとめcsvファイルにしています  
+  - ソース: https://www.jma.go.jp/bosai/forecast/data/forecast/{region_code}.json  
+  - 期間：2021-11-04 または 2021-12-15 (地域コードにより異なる) から2023-09-30まで  
+  - 収集間隔: 1日3回（漏れがある可能性あり、定時発表に加え訂正がなされることもあり）   
+  - ファイル名:    
+    - yyyyMM_{地域コード}_ansi.csv  
+    - yyyyMM_{地域コード}_utf8.csv  
+  - 地域コード: 上記に同じ  
+    - 地域コード 010000 は全国予報であり、情報的には上記に包含されるため略しています
+   
+- 概要予報(overview forecast)  
+  - jsonファイルを月単位にまとめcsvファイルにしています  
+  - ソース: https://www.jma.go.jp/bosai/forecast/data/overview_forecast/{region_code}.json  
+  - 期間：2021-12-15から2021-09-30まで  
+  - 収集間隔 1日3回（漏れがある可能性あり、定時発表に加え訂正がなされることもあり）   
+  - ファイル名:  
+    - yyyyMM_{地域コード}_ansi.csv  
+    - yyyyMM_{地域コード}_utf8.csv  
+  - 地域コード: 上記に同じ
+
+  
 # Japan-Meteorological-Agency-Weather-Forecast
 ## Archive of past weather forecasts by the Japan Meteorological Agency  
 The collection sources are the following URL formats and the following time periods.  
@@ -37,33 +66,5 @@ There was another "overview_week" but it seems to have stopped being updated, so
   - File name:  
     - yyyyMM_{region_code}_ansi.csv  
     - yyyyMM_{region_code}_utf8.csv  
-  - Region code: same as above  
-
-# 日本の気象庁による過去の天気予報のアーカイブ  
-収集元は以下のURL形式、以下の期間です。  
-各データ項目の読み取り方は、気象庁が公式に発表していないこともあり、私からは説明を控えます。
-気象庁のwebページの記載と照らし合わせて各自推測していただけますようお願いします。
-"forecast"と"overview forecast"の2種類のデータがあります。
-他に"overview_week"というのもあったのですが、更新が止まってしまったようなので公開していません。
-
-- 予報(forecast)  
-  - jsonファイルを月単位にまとめcsvファイルにしています  
-  - ソース: https://www.jma.go.jp/bosai/forecast/data/forecast/{region_code}.json  
-  - 期間：2021-11-04 または 2021-12-15 (地域コードにより異なる) から2023-09-30まで  
-  - 収集間隔: 1日3回（漏れがある可能性あり、定時発表に加え訂正がなされることもあり）   
-  - ファイル名:    
-    - yyyyMM_{地域コード}_ansi.csv  
-    - yyyyMM_{地域コード}_utf8.csv  
-  - 地域コード: 上記に同じ  
-    - 地域コード 010000 は全国予報であり、情報的には上記に包含されるため略しています
-   
-- 概要予報(overview forecast)  
-  - jsonファイルを月単位にまとめcsvファイルにしています  
-  - ソース: https://www.jma.go.jp/bosai/forecast/data/overview_forecast/{region_code}.json  
-  - 期間：2021-12-15から2021-09-30まで  
-  - 収集間隔 1日3回（漏れがある可能性あり、定時発表に加え訂正がなされることもあり）   
-  - ファイル名:  
-    - yyyyMM_{地域コード}_ansi.csv  
-    - yyyyMM_{地域コード}_utf8.csv  
-  - 地域コード: 上記に同じ
-  
+  - Region code: same as above
+  - 
