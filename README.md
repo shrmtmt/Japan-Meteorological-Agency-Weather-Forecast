@@ -1,4 +1,6 @@
 # 気象庁が過去に発表した天気予報のアーカイブ（履歴）  
+日本の気象庁が過去に発表した天気予報のアーカイブです。過去の天気予報を調べる方法が公的には用意されていないため、個人的に日々の天気予報を定期的に取得していました。本データを用いれば、過去の天気予報の履歴を確認できます。
+
 "forecast"と"overview forecast"の2種類のデータがあります。  
 他に"overview_week"というのもあったのですが、更新が止まってしまったようです。  
 収集元は以下のURL形式、以下の期間です。  
@@ -6,7 +8,7 @@
 - 予報(forecast)  
   - jsonファイルを月単位にまとめcsvファイルにしています  
   - ソース: https://www.jma.go.jp/bosai/forecast/data/forecast/{region_code}.json  
-  - 期間：2021-11-04 または 2021-12-15 (地域コードにより異なる) から2024-01-31まで  
+  - 期間：2021-11-04 から2024-02-29まで  (一部地域コードは2021-12-15から)
   - 収集間隔: 1日3回前後
     - 基本的には1日3回
     - 一部の日に取得漏れあり
@@ -35,9 +37,12 @@
     - yyyyMM_{地域コード}_utf8.csv  
   - 地域コード: 上記に同じ
 
+本サイトの天気予報や降水確率のデータを使用される場合、使用許諾等の事前の手続きは必要ありません。ご自由にご利用下さい。論文や文章にデータの引用元を表示する際には、「CC BY-SA 4.0　原典 Japan Meteorological Agency　アーカイブ　松本志朗」等と記載してください。公開可能な研究などであれば、事後で構いませんので、「こんな形で利用しました」とお知らせいただけると大変うれしいです。
   
 # Japan-Meteorological-Agency-Weather-Forecast
 ## Archive of past weather forecasts by the Japan Meteorological Agency  
+This is an archive of past weather forecasts issued by the Japan Meteorological Agency. Since there is no publicly available way to check past weather forecasts, I personally obtained daily weather forecasts on a regular basis. With this data, you can check the history of past weather forecasts.
+
 The collection sources are the following URL formats and the following time periods.  
 I will refrain from explaining how to read each data item, as the JMA does not have officially announced it.  
 I ask that you make your own guesses by checking the JMA's web page.  
@@ -49,7 +54,7 @@ There was another "overview_week" but it seems to have stopped being updated, so
     [https://www.jma.go.jp/bosai/forecast/data/forecast/130000.json](https://www.jma.go.jp/bosai/forecast/data/forecast/130000.json)  
   - The orginal json files are grouped by month into csv files.  
   - Source: https://www.jma.go.jp/bosai/forecast/data/forecast/{region_code}.json  
-  - Period: from 2021-11-04 or 2021-12-15 (depend on region) to 2024-01-31  
+  - Period: from 2021-11-04 to 2024-02-29 (In some region: from 2021-12-15)  
   - Collection interval Around 3 times a day
     - There is a possibility of omission of acquisition
     - In case of correction reports in addition to regular announcements, it may be more than 4 times a day
@@ -79,3 +84,5 @@ There was another "overview_week" but it seems to have stopped being updated, so
     - yyyyMM_{region_code}_ansi.csv  
     - yyyyMM_{region_code}_utf8.csv  
   - Region code: same as above
+
+No prior permission is required to use the weather forecast and precipitation probability data on this site. Please feel free to use the data. When citing data in a paper or text, please state "CC BY-SA 4.0 Source: Japan Meteorological Agency Archive: Shiro Matsumoto" or the like. If your research can be made public, it would be greatly appreciated if you could inform me after that you published.
