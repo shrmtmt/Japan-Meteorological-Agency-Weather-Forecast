@@ -8,7 +8,7 @@
 - 予報(forecast)  
   - jsonファイルを月単位にまとめ地域毎のcsvファイルにし、全地域・1ヶ月分のcsvファイルをzip圧縮しています  
   - ソース: https://www.jma.go.jp/bosai/forecast/data/forecast/{region_code}.json  
-  - 期間：2021-11-04 から2024-03-31まで
+  - 期間：2021-11-04 以降
   - 収集間隔: 1日3回前後
     - 基本的には1日3回
     - 一部の日・地域に取得漏れあり
@@ -30,7 +30,7 @@
 - 概要予報(overview forecast)  
   - jsonファイルを月単位にまとめ地域毎のcsvファイルにし、全地域・1ヶ月分のcsvファイルをzip圧縮しています  
   - ソース: https://www.jma.go.jp/bosai/forecast/data/overview_forecast/{region_code}.json  
-  - 期間：2021-12-15から2024-03-31まで  
+  - 期間：2021-12-15 以降
   - 収集間隔 1日3回前後（同上）   
   - ファイル名:    
     - overview_forecast_yyyyMM_{地域コード}.csv  
@@ -55,13 +55,12 @@ There was another "overview_week" but it seems to have stopped being updated, so
     [https://www.jma.go.jp/bosai/forecast/data/forecast/130000.json](https://www.jma.go.jp/bosai/forecast/data/forecast/130000.json)  
   - The orginal json files are grouped by month into csv files.  
   - Source: https://www.jma.go.jp/bosai/forecast/data/forecast/{region_code}.json  
-  - Period: from 2021-11-04 to 2024-02-29 (In some region: from 2021-12-15)  
+  - Period: from 2021-11-04   
   - Collection interval Around 3 times a day
     - There is a possibility of omission of acquisition
     - In case of correction reports in addition to regular announcements, it may be more than 4 times a day
   - File name:  
-    - yyyyMM_{region_code}_ansi.csv  
-    - yyyyMM_{region_code}_utf8.csv  
+    - yyyyMM_{region_code}.csv  
   - Region code: [  
                 '010000',
                 '011000', '012000', '013000', '014100', '015000', '016000', '017000', '020000',   
@@ -79,7 +78,7 @@ There was another "overview_week" but it seems to have stopped being updated, so
     [https://www.jma.go.jp/bosai/forecast/data/overview_forecast/130000.json](https://www.jma.go.jp/bosai/forecast/data/overview_forecast/130000.json)  
   - The orginal json files are grouped by month into csv files.  
   - Source: https://www.jma.go.jp/bosai/forecast/data/overview_forecast/{region_code}.json  
-  - Period: from 2021-12-15 to 2021-09-30  
+  - Period: from 2021-12-15  
   - Collection interval: Around 3 times a day (same as above)   
   - File name:  
     - overview_forecast_yyyyMM_{Region code}.csv  
