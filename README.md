@@ -37,26 +37,25 @@
   - 地域コード: '010000'を除き上記に同じ（'010000'は含まれない）
 
 本サイトの天気予報や降水確率のデータを使用される場合、使用許諾等の事前の手続きは必要ありません。ご自由にご利用下さい。
-論文や文章にデータの引用元を表示する際には、「CC BY-SA 4.0　原典：気象庁　アーカイブ：松本志朗」等と記載してください。
-公開可能な研究などであれば、事後で構いませんので、「こんな形で利用しました」とお知らせいただけると大変うれしいです。
+公開可能な研究などであれば、事後で構いませんので、「こんな形で利用しました」とIssueのコメントなどでお知らせいただけると大変うれしいです。
   
 # Japan-Meteorological-Agency-Weather-Forecast
 ## Archive of past weather forecasts by the Japan Meteorological Agency  
-This is an archive of past weather forecasts issued by the Japan Meteorological Agency. Since there is no publicly available way to check past weather forecasts, I personally obtained daily weather forecasts on a regular basis. With this data, you can check the history of past weather forecasts.
+This is an archive of past weather forecasts the Japan Meteorological Agency issued. Since there is no publicly available way to check past weather forecasts, I obtained daily weather forecasts regularly. With this data, you can check the history of past weather forecasts.
 
-The collection sources are the following URL formats and the following time periods.  
-I will refrain from explaining how to read each data item, as the JMA does not have officially announced it.  
-I ask that you make your own guesses by checking the JMA's web page.  
-There are two types of data: "forecast" and "overview_forecast".
-There was another "overview_week" but it seems to have stopped being updated, so it has not been published.
+The collection sources are the following URL formats and the following periods.  
+I will refrain from explaining how to read each data item as the JMA has yet to announce it officially.  
+Please make your own guess by checking the JMA's web page.  
+There are two types of data: "forecast" and "overview_forecast."
+There was another "overview_week," but it seems to have stopped being updated, so it has not been published.
 
 - forecast
   - It contains information roughly similar to that found on the following pages.  
     [https://www.jma.go.jp/bosai/forecast/data/forecast/130000.json](https://www.jma.go.jp/bosai/forecast/data/forecast/130000.json)  
-  - The orginal json files are grouped by month into csv files.  
+  - The original JSON files are grouped by month into CSV files.  
   - Source: https://www.jma.go.jp/bosai/forecast/data/forecast/{region_code}.json  
   - Period: from 2021-11-04   
-  - Collection interval Around 3 times a day
+  - Collection interval: Around 3 times a day
     - There is a possibility of omission of acquisition
     - In case of correction reports in addition to regular announcements, it may be more than 4 times a day
   - File name:  
@@ -71,12 +70,12 @@ There was another "overview_week" but it seems to have stopped being updated, so
                 '350000', '360000', '370000', '380000', '390000', '400000', '410000', '420000',  
                 '430000', '440000', '450000', '460100', '471000', '472000', '473000', '474000'  
                 ]  
-    - Region code: 010000 is the national forecast.  
+    - Region code 010000 is the national forecast.  
 
 - overview forecast
   - It contains information roughly similar to that found on the following pages.  
     [https://www.jma.go.jp/bosai/forecast/data/overview_forecast/130000.json](https://www.jma.go.jp/bosai/forecast/data/overview_forecast/130000.json)  
-  - The orginal json files are grouped by month into csv files.  
+  - The original JSON files are grouped by month into CSV files.  
   - Source: https://www.jma.go.jp/bosai/forecast/data/overview_forecast/{region_code}.json  
   - Period: from 2021-12-15  
   - Collection interval: Around 3 times a day (same as above)   
@@ -84,6 +83,5 @@ There was another "overview_week" but it seems to have stopped being updated, so
     - overview_forecast_yyyyMM_{Region code}.csv  
   - Region code: almost same as above, but '010000' is not included）
 
-No prior permission is required to use the weather forecast and precipitation probability data on this site. Please feel free to use the data. 
-When citing data in a paper or text, please state "CC BY-SA 4.0 Source: Japan Meteorological Agency Archive: Shiro Matsumoto" or the like. 
-If your research can be made public, it would be greatly appreciated if you could inform me after that you published.
+You don't need any prior permission to use the weather forecast and precipitation probability data on this site. Please feel free to use the data. 
+If your research can be made public, I would greatly appreciate it if you could inform me via issue comments after you publish.
